@@ -14,17 +14,23 @@ angular.module('myApp.todosMod', ['ngRoute'])
   .component('todosPage', {
     templateUrl: './features/13-todos/index.html',
     controller: [
-      'inMemoryTodos',
-      function (inMemoryTodos) {
+      function () {
         var $ctrl = this;
+
         $ctrl.handleDeleteTodo = function (todo) {
-          inMemoryTodos.remove(todo);
-        };
-        $ctrl.handleCreateTodo = function (todoData) {
-          inMemoryTodos.create(todoData);
+          //TODO
         };
 
-        $ctrl.todos = inMemoryTodos.getAll();
+        $ctrl.handleCreateTodo = function (todoData) {
+          //TODO
+        };
+
+        var TODOS = [
+          { id: 100, title: 'Buy milk', description: '2%' },
+          { id: 200, title: 'Walk a dog' },
+          { id: 100, title: 'Do homework', description: 'Math, Physics' },
+        ];
+        $ctrl.todos = [];
       }
     ]
   });

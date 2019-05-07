@@ -17,16 +17,8 @@ angular.module('myApp.inputsOutputsMod')
 
         $ctrl.handleSelectEngine = function (engine) {
           console.log('selectEngine(engine)', engine);
-          $ctrl.selectedEngine = engine;
+          //TODO
         };
-        $ctrl.handleSelectColor = function (color) {
-          console.log('color', color);
-          $ctrl.selectedColor = color;
-        };
-        $ctrl.handleSelectDriveWheel = function (driveWheel) {
-          $ctrl.selectedDriveWheel = driveWheel;
-        };
-
 
       }
     ]

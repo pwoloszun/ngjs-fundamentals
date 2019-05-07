@@ -2,17 +2,13 @@
   <md-list>
     <md-subheader class="md-no-sticky">Todos</md-subheader>
 
-    <md-list-item ng-repeat="item in $ctrl.items"
-                  class="md-2-line"
-    >
-      <div class="md-list-item-text" layout="column">
-        <h3> {{ item.title }} </h3>
-        <p> {{ item.description }} </p>
-      </div>
 
-      <md-button ng-click="$ctrl.handleDelete(item)"
-                 class="md-secondary md-fab md-mini"
-      >
+    <md-list-item class="md-2-line">
+      <div class="md-list-item-text" layout="column">
+        <h3> TITLE TODO </h3>
+        <p> DESC TODO </p>
+      </div>
+      <md-button class="md-secondary md-fab md-mini">
         <md-icon>delete</md-icon>
       </md-button>
       <md-divider></md-divider>

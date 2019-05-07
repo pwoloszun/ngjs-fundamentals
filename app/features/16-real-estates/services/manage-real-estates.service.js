@@ -9,17 +9,11 @@ angular.module('myApp.realEstatesMod')
         realEstates: [],
 
         fetch: function () {
-          realEstatesApi.getAll().then((realEstates) => {
-            this.realEstates = realEstates;
-          });
+          // TODO 1: fetch real estates using realEstatesApi
         },
 
         toggleRealEstate: function (estate) {
-          if (this.selectedRealEstate === estate) {
-            this.selectedRealEstate = null;
-          } else {
-            this.selectedRealEstate = estate;
-          }
+          // TODO 2: impl toggle realEstate
         }
       };
 

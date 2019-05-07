@@ -26,7 +26,7 @@ angular.module('myApp.realEstatesMod', ['ngRoute'])
         ];
 
         $ctrl.handleRealEstateClick = function (estate) {
-          $ctrl.service.toggleRealEstate(estate);
+          // TODO
         };
 
         $ctrl.service.fetch();

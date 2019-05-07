@@ -19,6 +19,7 @@ angular.module('myApp.heroesMod', ['ngRoute'])
         var $ctrl = this;
         $ctrl.selectedHero = null;
         $ctrl.superHeroes = [];
+
         $ctrl.tableHeaders = [
           { value: "universe", text: "Comic Universe" },
           { value: "name", text: "Hero Name" },
@@ -27,13 +28,13 @@ angular.module('myApp.heroesMod', ['ngRoute'])
 
         $ctrl.handleHeroClick = function (superHero) {
           console.log("clicked super hero", superHero);
-          $ctrl.selectedHero = superHero;
+          // TODO
         };
 
         heroesApi.getAll()
           .then(function (heroes) {
             console.log('fetched users', heroes);
-            $ctrl.superHeroes = heroes;
+            // TODO
           })
           .catch(function (err) {
             console.error(err);

@@ -1,26 +1,23 @@
 <md-card>
-  <form name="userForm">
+  <form>
 
     <md-card-content layout="column" layout-align="none none">
 
       <md-input-container flex-gt-xs>
         <label>Title*</label>
-        <input ng-model="$ctrl.tmpTitle" type="text"/>
+        <input type="text"/>
       </md-input-container>
 
       <md-input-container>
         <label>Description</label>
-        <input ng-model="$ctrl.tmpDescription" type="text"/>
+        <input type="text"/>
       </md-input-container>
 
     </md-card-content>
 
     <md-card-actions layout="row">
 
-      <md-button ng-disabled="!$ctrl.isValid()"
-                 ng-click="$ctrl.handleSubmit()"
-                 class="md-raised md-primary"
-      >
+      <md-button class="md-raised md-primary">
         Submit
       </md-button>
       <md-button class="md-raised">Clear</md-button>

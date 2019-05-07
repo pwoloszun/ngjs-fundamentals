@@ -16,6 +16,7 @@ angular.module('myApp.citiesMod', ['ngRoute'])
     controller: [
       function () {
         var $ctrl = this;
+
         $ctrl.selectedCity = null;
         $ctrl.myCities = [
           { name: "Lublin", lat: 51.15, lng: 22.34 },
@@ -28,7 +29,7 @@ angular.module('myApp.citiesMod', ['ngRoute'])
 
         $ctrl.handleMarkerClick = function (city) {
           console.log('city marker click', city);
-          $ctrl.selectedCity = city;
+          // TODO
         };
       }
     ]
