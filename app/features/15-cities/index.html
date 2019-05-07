@@ -1,0 +1,12 @@
+<md-content layout="column" layout-align="start stretch">
+  <h3>Cities</h3>
+  <h4>Selected: {{ $ctrl.selectedCity.name }}</h4>
+  <div>
+
+  </div>
+  <google-map geo-locations="$ctrl.myCities"
+              selected="$ctrl.selectedCity"
+              marker-click="$ctrl.handleMarkerClick($event)"
+  ></google-map>
+
+</md-content>

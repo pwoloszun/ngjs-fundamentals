@@ -1,0 +1,15 @@
+<div class="my-child">
+  <h3>My Child</h3>
+  <div>
+    <p>
+      Child received: {{ $ctrl.textMessage }}
+    </p>
+  </div>
+  <div>
+    <input ng-model="$ctrl.childText"/>
+    <p>Child text: {{ $ctrl.childText }}</p>
+  </div>
+  <div>
+    <button ng-click="$ctrl.sendMessage()">Send</button>
+  </div>
+</div>

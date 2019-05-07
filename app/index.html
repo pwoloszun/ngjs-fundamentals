@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
+  <style>
+  [ng-cloak] {
+    display: none;
+  }
+  </style>
+  <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5-bbgTNTEP0etxKqYe2aTQyDSdaucH58"
+    type="text/javascript"
+  ></script>
+  <script src="loader.js"></script>
+  <script src="app-bootstrap.js"></script>
+  <title>ngjs-fundamentals</title>
+
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css"/>
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css"/>
+  <link rel="stylesheet" href="lib/angular-material/angular-material.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+  <link rel="stylesheet" href="app.css"/>
+</head>
+<body ng-cloak layout="column">
+
+
+<div layout="column" layout-fill style="height: 500px;" ng-cloak>
+
+  <main-navigation></main-navigation>
+
+  <md-content flex layout-padding>
+    <div layout="column" layout-align="start stretch">
+      <div ng-view></div>
+    </div>
+  </md-content>
+
+</div>
+</body>
+</html>

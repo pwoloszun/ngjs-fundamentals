@@ -1,0 +1,16 @@
+<div class="real-estate-details">
+  <h3>Real Estate Details:</h3>
+  <div ng-if="$ctrl.item">
+    <p>Ulica: {{$ctrl.item.street}}</p>
+
+    <p>Szer. Geo.: {{$ctrl.item.lat}}</p>
+
+    <p>Dl. Geo.: {{$ctrl.item.lng}}</p>
+
+    <p>Cena: {{$ctrl.item.price}}</p>
+
+    <p>Typ: {{$ctrl.item.type}}</p>
+
+    <p>Rok bud.: {{$ctrl.item.builtAt}}</p>
+  </div>
+</div>

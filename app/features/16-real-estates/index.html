@@ -1,0 +1,21 @@
+<div layout="column">
+  <div layout="row">
+    <div flex="66">
+      <google-map geo-locations="$ctrl.service.realEstates"
+                  selected="$ctrl.service.selectedRealEstate"
+                  marker-click="$ctrl.handleRealEstateClick($event)"
+      ></google-map>
+    </div>
+    <div flex="33">
+      <real-estate-details item="$ctrl.service.selectedRealEstate"
+      ></real-estate-details>
+    </div>
+  </div>
+  <div>
+    <my-data-table items="$ctrl.service.realEstates"
+                   selected-item="$ctrl.service.selectedRealEstate"
+                   headers="$ctrl.metadata"
+                   item-click="$ctrl.handleRealEstateClick($event)"
+    ></my-data-table>
+  </div>
+</div>

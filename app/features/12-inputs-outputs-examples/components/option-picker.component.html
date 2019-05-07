@@ -1,0 +1,8 @@
+<div class="option-picker">
+  <h3>{{ $ctrl.label }}</h3>
+  <button ng-repeat="option in $ctrl.options"
+          ng-click="$ctrl.handleChoose(option)"
+  >
+    {{ option }}
+  </button>
+</div>

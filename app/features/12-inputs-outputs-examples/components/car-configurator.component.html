@@ -1,0 +1,28 @@
+<div class="car-configurator">
+  <h1>CarConfigurator</h1>
+  <div class="chosen-config">
+    <h3>Current config</h3>
+    <p>Engine: {{ $ctrl.selectedEngine }}</p>
+    <p>Color: {{ $ctrl.selectedColor }}</p>
+    <p>Drive Wheel: {{ $ctrl.selectedDriveWheel }}</p>
+  </div>
+  <div>
+    <option-picker
+      label="'Choose engine type'"
+      options="$ctrl.engines"
+      option-select="$ctrl.handleSelectEngine($event)"
+    ></option-picker>
+
+    <option-picker
+      label="'Select color'"
+      options="$ctrl.colors"
+      option-select="$ctrl.handleSelectColor($event)"
+    ></option-picker>
+
+    <option-picker
+      label="'Your drive wheel?'"
+      options="$ctrl.driveWheels"
+      option-select="$ctrl.handleSelectDriveWheel($event)"
+    ></option-picker>
+  </div>
+</div>

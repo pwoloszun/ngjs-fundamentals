@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ngjs-fundamentals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="lib/angular-material/angular-material.css"/>
+  <link rel="stylesheet" href="app.css">
+  <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body layout="column">
+
+
+<md-toolbar layout="row">
+
+  <md-nav-bar md-selected-nav-item="view1" aria-label="Main Nav">
+    <md-nav-item md-nav-href="#!/view1" name="view1">view one</md-nav-item>
+    <md-nav-item md-nav-href="#!/view2" name="view2">view two</md-nav-item>
+  </md-nav-bar>
+</md-toolbar>
+
+<!-- Container #2 -->
+<div flex layout="row">
+
+  <!-- Container #3 -->
+  <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2"></md-sidenav>
+
+  <!-- Container #4 -->
+  <md-content flex id="content"></md-content>
+
+</div>
+
+
+<ul class="menu">
+  <li><a href="#!/view1">view1</a></li>
+  <li><a href="#!/view2">view2</a></li>
+</ul>
+
+<div ng-view></div>
+
+<div>AngularJS seed app: v<span app-version></span></div>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-animate/angular-animate.js"></script>
+<script src="lib/angular-aria/angular-aria.js"></script>
+<script src="lib/angular-material/angular-material.js"></script>
+<script src="lib/angular-resource/angular-resource.js"></script>
+<script src="lib/angular-route/angular-route.js"></script>
+
+<script src="app.js"></script>
+<script src="view1/view1.js"></script>
+<script src="view2/view2.js"></script>
+<script src="core/version/version.js"></script>
+<script src="core/version/version-directive.js"></script>
+<script src="core/version/interpolate-filter.js"></script>
+</body>
+</html>

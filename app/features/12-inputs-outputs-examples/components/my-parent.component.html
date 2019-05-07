@@ -1,0 +1,15 @@
+<div class="my-parent">
+  <h1>My Parent</h1>
+  <div>
+    <input ng-model="$ctrl.parentMsg"/>
+    <p>
+      Parent: {{ $ctrl.parentMsg }}
+    </p>
+  </div>
+  <div>
+    <my-child
+      text-message="parentMsg"
+      message-sent="$ctrl.logMessage($event)"
+    />
+  </div>
+</div>

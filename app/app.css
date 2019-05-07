@@ -1,0 +1,104 @@
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.hello-world {
+  background-color: #f00;
+}
+
+.personal-data {
+  border: 3px solid #000;
+  background-color: #ededed;
+  padding: 18px;
+}
+
+.my-parent {
+  padding: 18px;
+  background-color: aquamarine;
+}
+
+.my-child {
+  padding: 8px;
+  background-color: lightcoral;
+}
+
+.car-configurator {
+  border: 1px solid #000;
+  padding: 8px;
+  background-color: deepskyblue;
+}
+
+.car-configurator .chosen-config {
+  padding: 16px;
+}
+
+.option-picker {
+  padding: 16px;
+  border: 1px solid #000;
+  margin: 8px auto;
+  background-color: aliceblue;
+}
+
+.option-picker button {
+  margin: 0 6px;
+  padding: 6px 12px;
+}
+
+.list {
+  margin: 0 10px 10px;
+  padding: 10px 0;
+}
+
+.list table {
+  width: 100%;
+  border: 1px solid #777;
+}
+
+.list .list-item:nth-child(odd) {
+  background-color: #ccc;
+}
+
+.list .list-item:hover {
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+
+.list .list-item:hover:nth-child(odd) {
+  background-color: #b7b7b7;
+}
+
+.list .list-item.highlighted,
+.list .list-item.highlighted:hover:nth-child(odd) {
+  background-color: paleturquoise;
+}
+
+.list .list-header a {
+  color: #3388ff;
+  cursor: pointer;
+}
+
+.list .list-header .selected {
+  font-weight: bold;
+}
+
+.g-map {
+  height: 460px;
+  min-width: 600px;
+  background-color: aqua;
+  border: 1px solid #777;
+  margin: 10px;
+}
+
+.real-estate-details {
+  height: 460px;
+  margin: 10px;
+  padding: 16px;
+  background-color: chocolate;
+}
+
+.lorem-cont {
+  min-height: 300px;
+}
