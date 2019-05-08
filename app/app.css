@@ -102,3 +102,33 @@
 .lorem-cont {
   min-height: 300px;
 }
+
+.basic-form {
+  background-color: #b3d4fc;
+  border: 2px solid #000;
+  padding: 12px;
+}
+
+.basic-form label {
+  display: block;
+}
+
+.basic-form input.ng-invalid.ng-touched {
+  background-color: #FA787E;
+}
+
+.basic-form input.ng-valid.ng-touched {
+  background-color: #78FA89;
+}
+
+.basic-form pre {
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+.basic-form .my-errors div {
+  background-color: #fcc;
+  border: 1px solid #f00;
+  padding: 12px;
+}

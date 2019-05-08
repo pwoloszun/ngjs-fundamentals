@@ -1,0 +1,82 @@
+<form>
+  <md-card flex="66">
+    <md-card-content layout="column" layout-align="start">
+
+      <md-input-container>
+        <label>Full Name</label>
+        <input type="text"/>
+      </md-input-container>
+
+      <md-input-container>
+        <label>Age</label>
+        <input type="number"/>
+      </md-input-container>
+
+      <md-input-container>
+        <label>Select Country</label>
+        <md-select ng-model="xxxTodo">
+          <md-option ng-value=" 'first' ">
+            First opt
+          </md-option>
+          <md-option value="second">
+            Sec opt
+          </md-option>
+        </md-select>
+      </md-input-container>
+
+
+      <md-switch class="md-primary" md-no-ink>
+        Enable Details
+      </md-switch>
+
+      <div layout="column" flex>
+        <md-input-container flex>
+          <label>Weight</label>
+          <input type="number"/>
+        </md-input-container>
+      </div>
+
+      <md-card>
+        <md-card-title>
+          <div class="md-headline">Interests</div>
+        </md-card-title>
+        <md-card-content>
+          <md-checkbox>
+            check 1
+          </md-checkbox>
+          <md-checkbox>
+            check 2
+          </md-checkbox>
+
+          <md-select ng-model="yyyTodo" multiple>
+            <md-option ng-value="'1st inter'">
+              First interest
+            </md-option>
+            <md-option value="'2nd inter'">
+              Sec interest
+            </md-option>
+          </md-select>
+        </md-card-content>
+      </md-card>
+
+
+      <div layout="row" layout-align="start" flex>
+        <md-button class="md-primary md-raised">
+          Save
+        </md-button>
+        <md-button class="md-raised">Clear</md-button>
+      </div>
+
+
+      <hr/>
+      <h5>Form State</h5>
+      <div layout="row" layout-align="start">
+        <md-checkbox ng-model="regForm.$invalid" disabled>Form Invalid</md-checkbox>
+        <md-checkbox ng-model="regForm.$dirty" disabled>Form Dirty</md-checkbox>
+        <md-checkbox ng-model="regForm.$submitted" disabled>Form Submitted</md-checkbox>
+        <md-checkbox ng-model="regForm.favoriteColor.$touched" disabled>Select Touched</md-checkbox>
+      </div>
+
+    </md-card-content>
+  </md-card>
+</form>

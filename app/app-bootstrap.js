@@ -53,7 +53,16 @@ window.$script([
 
   'features/16-real-estates/index.js',
   'features/16-real-estates/services/manage-real-estates.service.js',
-  'features/16-real-estates/components/real-estate-details.component.js'
+  'features/16-real-estates/components/real-estate-details.component.js',
+
+  'features/21-forms/index.js',
+  'features/21-forms/services/async-validator.service.js',
+  'features/21-forms/services/sync-validator.service.js',
+  'features/21-forms/services/countries.service.js',
+  'features/21-forms/services/interests.service.js',
+  'features/21-forms/components/basic-form.component.js',
+  'features/21-forms/components/registration-form.component.js'
+
 ], function () {
   // when all is done, execute bootstrap AngularJS application
   angular.bootstrap(window.document, ['myApp']);

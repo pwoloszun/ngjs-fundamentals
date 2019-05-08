@@ -21,6 +21,7 @@ angular.module('myApp', [
   'myApp.heroesMod',
   'myApp.citiesMod',
   'myApp.realEstatesMod',
+  'myApp.formsMod'
 
 ]).config([
   '$locationProvider',

@@ -16,6 +16,7 @@ angular
           { path: '#!/heroes', text: 'Heroes' },
           { path: '#!/cities', text: 'Cities' },
           { path: '#!/real-estates', text: 'Real Estates' },
+          { path: '#!/forms', text: 'Forms' },
         ];
 
         this.toggleSideNav = function () {

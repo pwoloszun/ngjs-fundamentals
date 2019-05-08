@@ -1,0 +1,69 @@
+<div class="basic-form">
+  <form name="basicForm" novalidate class="simple-form">
+
+    <label>
+      Name:
+      <input type="text"
+             ng-model="$ctrl.user.name"
+             name="userName"
+             required
+             minlength="2"
+      />
+    </label>
+    <div ng-if="basicForm.$submitted && basicForm.userName.$touched" class="my-errors">
+      <div ng-if="basicForm.userName.$error.required">
+        required
+      </div>
+      <div ng-if="basicForm.userName.$error.minlength">
+        At least 2 chars
+      </div>
+      <div ng-if="basicForm.userName.$error.isBatman">
+        Should begin with: "ba"
+      </div>
+    </div>
+
+    <label>
+      Age:
+      <input type="number"
+             ng-model="$ctrl.user.age"
+             ng-model-options="{ debounce: 800 }"
+             name="userAge"
+             min="15"
+             max="130"
+             required
+      />
+    </label>
+
+    <label>
+      E-mail:
+      <input type="email"
+             ng-model="$ctrl.user.email"
+             ng-model-options="{ debounce: 800 }"
+             name="userEmail"
+             required
+      />
+    </label>
+
+    <span>Best Editor:</span>
+    <label ng-repeat="option in $ctrl.editorOptions">
+      <input type="radio" ng-model="$ctrl.user.preference" value="{{option.value}}"/>
+      {{ option.text }}
+    </label>
+
+    <div>
+      <button ng-click="$ctrl.saveForm(basicForm)" type="submit">
+        Save
+      </button>
+      <button ng-click="$ctrl.resetForm()" type="reset">
+        Reset
+      </button>
+    </div>
+  </form>
+
+  <div>
+    <h3>Form state</h3>
+    <pre>user = {{$ctrl.user | json}}</pre>
+    <pre>master = {{$ctrl.master | json}}</pre>
+    <pre>basicForm = {{ basicForm | json }}</pre>
+  </div>
+</div>
